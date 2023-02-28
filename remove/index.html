@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dropzones">
+        <div class="dropzone-top dropzone"></div>
+        <div class="dropzone-left dropzone"></div>
+        <div class="dropzone-right dropzone">
+            <div class="navigation" draggable="true">
+                <ul>
+                    <li class="nav active">
+                        <a href="#home">
+                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav">
+                        <a href="#about">
+                            <span class="icon"><ion-icon name="accessibility-outline"></ion-icon></span>
+                            <span class="text">About</span>
+                        </a>
+                    </li>
+                    <li class="nav">
+                        <a href="#job">
+                            <span class="icon"><ion-icon name="accessibility-outline"></ion-icon></span>
+                            <span class="text">Job</span>
+                        </a>
+                    </li>
+                    <li class="nav">
+                        <a href="#contact">
+                            <span class="icon"><ion-icon name="accessibility-outline"></ion-icon></span>
+                            <span class="text">Contact</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                    <div class="menuToggle"></div>
+    
+                </ul>
+            </div>
+        </div>
+        <div class="dropzone-bottom dropzone"></div>
+    </div>
+    <section class="page home" id="home">
+        <div class="container">
+            <div class="main-title">
+                <h1 class="title">Sua <i>Marca de Personalidade</i></h1>
+                <h1 class="subtitle">em outro <i>NÍVEL</i></h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="page about" id="about">
+        <div class="container">
+            <div class="display-logo"></div>
+            <p class="content"></p>
+        </div>
+
+    </section>
+    <section class="page job" id="job">
+        <div class="container">
+            <input type="radio" name="slider" id="s1" checked>
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+
+            <div class="cards">
+                <label for="s1" id="slide1">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/rocca-construtora-id.png" alt="Rocca Construtora">
+                        </div>
+                        <div class="infos">
+                            <span class="name">Rocca Construtora</span>
+                            <span class="lorem">Projeto de Identidade Visual</span>
+                        </div>
+                    </div>
+                </label>
+                <label for="s2" id="slide2">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/osprey-wear-id.jpg" alt="Osprey Wear" srcset="">
+                        </div>
+                        <div class="infos">
+                            <span class="name">Osprey Wear</span>
+                            <span class="lorem">Projeto de Identidade Visual</span>
+                        </div>
+                    </div>
+                </label>
+                <label for="s3" id="slide3">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/nike-solar-sm.png" alt="Nike Solar" srcset="">
+                        </div>
+                        <div class="infos">
+                            <span class="name">Nike Solar</span>
+                            <span class="lorem">Projeto de Social Media</span>
+                        </div>
+                    </div>
+                </label>
+                <label for="s5" id="slide5">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/miny-point-sm.png" alt="Miny Point" srcset="">
+                        </div>
+                        <div class="infos">
+                            <span class="name">Miny Point</span>
+                            <span class="lorem">Projeto de Social Media</span>
+                        </div>
+                    </div>
+                </label>
+                <label for="s4" id="slide4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/miny-point-sm.png" alt="Miny Point" srcset="">
+                        </div>
+                        <div class="infos">
+                            <span class="name"></span>
+                            <span class="lorem"></span>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer contact" id="contact">
+        <div class="container">
+            <div class="footer-title">
+                <span>Fale com a gente agora!</span>
+                <ul class="socialmedia">
+                    <li class="instagram"></li>
+                    <li class="email"></li>
+                    <li class="whatsapp"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

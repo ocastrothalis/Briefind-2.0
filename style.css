@@ -1,0 +1,323 @@
+html {
+    font-family: 'Nunito';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #130f0d;
+    color: white;
+}
+
+.dropzone-top{
+    width: 100%;
+    height: 70px;
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.dropzone-bottom{
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dropzone-right{
+    width: 70px;
+    height:100%;
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+
+.dropzone-left{
+    width: 70px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+
+
+.status {
+    width: 30px;
+    height: 8px;
+    background: gray;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.status.green {
+    background: #23d2ac;
+}
+
+.status.blue {
+    background: #33adff;
+}
+
+.status.red {
+    background: red;
+}
+
+.highlight {
+    background-color: #FD951F08;
+}
+
+.navigation, .dropzone {
+    transition: 400ms;
+}
+
+.is-dragging {
+    cursor: move;
+    opacity: 0.3;
+}
+
+.over {
+    background-color: #4cd13711;
+}
+
+.dropzone-top .navigation, .dropzone-bottom .navigation{
+    width: 350px;
+    height: 70px;
+}
+
+.dropzone-right .navigation, .dropzone-left .navigation{
+    height: 350px;
+    width: 70px;
+}
+
+.navigation{
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.dropzone-top .navigation ul, .dropzone-bottom .navigation ul{
+    width: 280px;
+}
+
+.dropzone-right .navigation ul, .dropzone-left .navigation ul{
+    height: 280px;
+    flex-direction: column;
+}
+
+.navigation ul{
+    display: flex;
+}
+
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    flex-direction: column;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: blue;
+}
+
+.dropzone-right .navigation ul li.active a .icon{
+    transform: translateX(-42px)
+}
+
+.dropzone-left .navigation ul li.active a .icon{
+    transform: translateX(42px)
+}
+
+.dropzone-bottom .navigation ul li.active a .icon{
+    transform: translateY(-32px)
+}
+
+.dropzone-top .navigation ul li.active a .icon{
+    transform: translateY(35px)
+}
+
+.navigation ul li a .text{
+    position: absolute;
+    color: #141316;
+    font-size: 0.75em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.dropzone-bottom .navigation ul li a .text{
+    transform: translateY(10px);
+}
+
+.dropzone-top .navigation ul li a .text{
+    transform: translateY(-15px);
+}
+
+.dropzone-bottom .navigation ul li.active a .text, .dropzone-top .navigation ul li.active a .text{
+    opacity: 1;
+}
+
+.dropzone-top .indicator{
+    bottom: -50%;
+}
+
+.dropzone-bottom .indicator{
+    top: -50%;
+}
+
+.dropzone-right .indicator{
+    left: -60%;
+} 
+
+.dropzone-left .indicator{
+    right: -60%;
+}
+
+.indicator{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #23d2ac;
+    border-radius: 50%;
+    border: 6px solid #130f0d;
+    transition: 0.5s;
+}
+
+.dropzone-bottom .indicator::before{
+    top: 50%;
+    left: -22px;
+    box-shadow: 1px -10px 0 0 #130f0d;
+    border-top-right-radius: 20px;
+}
+
+.dropzone-top .indicator::before{
+    bottom: 50%;
+    left: -22px;
+    box-shadow: 1px 10px 0 0 #130f0d;
+    border-bottom-right-radius: 20px;
+}
+
+.dropzone-right .indicator::before, .dropzone-left .indicator::before{
+    top: -19px;
+}
+
+.dropzone-right .indicator::before{
+    right: 2px;
+    border-end-start-radius: 20px;
+    box-shadow: -10px 1px 0 0 #130f0d;
+}
+
+.dropzone-left .indicator::before{
+    left: 2px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 1px 0 0 #130f0d;
+}
+
+.indicator::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+}
+
+.dropzone-bottom .indicator::after{
+    top: 50%;
+    right: -22px;
+    box-shadow: -1px -10px 0 0 #130f0d;
+    border-top-left-radius: 20px;
+}
+
+.dropzone-top .indicator::after{
+    bottom: 50%;
+    right: -22px;
+    box-shadow: -1px 10px 0 0 #130f0d;
+    border-bottom-left-radius: 20px;
+}
+
+.dropzone-right .indicator::after, .dropzone-left .indicator::after{
+    bottom: -19px;
+}
+
+.dropzone-right .indicator::after{
+    right: 2px;
+    box-shadow: -10px -1px 0 0 #130f0d;
+    border-top-left-radius: 20px;
+}
+
+.dropzone-left .indicator::after{
+    left: 2px;
+    box-shadow: 10px -1px 0 0 #130f0d;
+    border-top-right-radius: 20px;
+}
+
+.indicator::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+}
+
+.dropzone-right .navigation ul li:nth-child(1).active ~ .indicator, .dropzone-left .navigation ul li:nth-child(1).active ~ .indicator{
+    transform: translateY(calc(70px * 0));
+}
+
+.dropzone-right .navigation ul li:nth-child(2).active ~ .indicator, .dropzone-left .navigation ul li:nth-child(2).active ~ .indicator{
+    transform: translateY(calc(70px * 1));
+}
+
+.dropzone-right .navigation ul li:nth-child(3).active ~ .indicator, .dropzone-left .navigation ul li:nth-child(3).active ~ .indicator{
+    transform: translateY(calc(70px * 2));
+}
+
+.dropzone-right .navigation ul li:nth-child(4).active ~ .indicator, .dropzone-left .navigation ul li:nth-child(4).active ~ .indicator{
+    transform: translateY(calc(70px * 3));
+}
+
+.dropzone-top .navigation ul li:nth-child(1).active ~ .indicator, .dropzone-bottom .navigation ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px * 0));
+}
+
+.dropzone-top .navigation ul li:nth-child(2).active ~ .indicator, .dropzone-bottom .navigation ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px * 1));
+}
+
+.dropzone-top .navigation ul li:nth-child(3).active ~ .indicator, .dropzone-bottom .navigation ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px * 2));
+}
+
+.dropzone-top .navigation ul li:nth-child(4).active ~ .indicator, .dropzone-bottom .navigation ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(70px * 3));
+}

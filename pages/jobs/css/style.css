@@ -1,0 +1,132 @@
+@import url("https://use.typekit.net/fyh6moo.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, sans-serif;
+}
+
+:root{
+    --yellow: #F3F1A2;
+    --yellow-1: #FFFDB3;
+    --yellow-2: #FFF6A4;
+    --yellow-3: #F9EF95;
+    --yellow-4: #F8F8D2;
+    --black: #0F0D0D;
+    --black-1: #212121;
+    --black-2: #161614;
+    --black-3: #090909;
+    --white: #F9F9F4;
+    --white-1: #F9F8F2;
+    --white-2: #F3F3F5;
+    --white-3: #F6F6F6;
+    --red: #FC6565;
+    --red-1: #FC7272;
+    --red-2: #F26B6B;
+    --red-3: #CC7171;
+    --blue: #70BBF9;
+    --blue-1: #8FCCFF;
+    --blue-2: #78B2E7;
+    --blue-3: #6696F7;
+    --blue-4: #68ABE4;
+    --blue-5: #69C3E8;
+}
+
+.contact{
+    height: 80vh;
+    background: var(--black-2);
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-text{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-text h1{
+    color: var(--white);
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.contact-text h1{
+    padding-bottom: 30px;
+}
+
+.contact-text h2{
+    color: var(--white);
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.contact-text h2{
+    font-size: 1.5em;
+    position: relative;
+}
+
+.social{
+    display: flex;
+    height: 28px;
+}
+
+.email, .whatsapp{
+    display: flex;
+    position: relative;
+}
+
+.email .icon, .whatsapp .icon{
+    position: relative;
+    padding: 0 20px;
+}
+
+.email .txt, .whatsapp .txt{
+    display: none;
+    line-height: 1.5em;
+}
+
+.email .icon svg, .whatsapp .icon svg{
+    height: 1.5em;
+}
+
+#logo{
+    height: 2em;
+}
+
+.logo-id{
+    position: absolute;
+    top: 15vh;
+}
+
+.contact-text p{
+    color: var(--white);
+    font-size: 1.1em;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.job{
+    width: 100%;
+    height: 500vh;
+}
+
+.reference{
+    display: block;
+    width: 100%;
+    height: 50vh;
+    background-color: #090909;
+}

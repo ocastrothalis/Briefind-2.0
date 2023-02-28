@@ -1,0 +1,81 @@
+@import url("https://use.typekit.net/fyh6moo.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: brandon-grotesque, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    min-height: 50px;
+    font-size: 1.8rem;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.menu{
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+    color: 111;
+}
+
+.social{
+    width: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.facebook svg:hover{
+    fill: #3b5998;
+}
+
+.instagram svg:hover{
+    fill: #bc2a8d;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav svg{
+    height: 2rem;
+}
+
+.home{
+    width: 100%;
+    height: 95vh;
+    background: #FFF58E;
+}
+
+.container-navbar-rigth{
+    width: 50px;
+    height: 100vh;
+    background: #3b5998;
+    position: absolute; 
+    display: block;   
+}
